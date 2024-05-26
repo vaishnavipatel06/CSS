@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+            background-image: linear-gradient(180deg, #000 20%, rgb(38, 132, 132));
+        }
+
+        .sbox {
+            height: 600px;
+            width: 90%;
+            border: 1px solid;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px gray;
+            background-color: #000000;
+            margin: 50px auto;
+        }
+
+        .head {
+            height: 80px;
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            color: white;
+            display: flex;
+        }
+
+        h1 {
+            flex-grow: 1;
+            line-height: 80px;
+            margin-left: 100px;
+            transition: 2s;
+        }
+
+        .but {
+            padding: 20px 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .but:hover {
+            border-radius: 20px;
+            background-color: cyan;
+            color: black;
+            box-shadow: 0px 0px 5px gray;
+        }
+
+        .section {
+            height: 520px;
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            display: flex;
+        }
+
+        .box1 {
+            height: 520px;
+            width: 100%;
+            border: 1px solid transparent;
+            margin-top: 100px;
+        }
+
+        .box2 {
+            height: 520px;
+            width: 100%;
+            border: 1px solid transparent;
+            margin-top: 100px;
+        }
+
+        .smbox2 {
+            height: 300px;
+            width: 300px;
+            border: 1px solid transparent;
+            margin-top: 40px;
+            margin-left: 250px;
+            border-radius: 50%;
+            background-color: cyan;
+            box-shadow: 0px 0px 10px cyan;
+        }
+        button{
+            padding: 20px 30px;
+            background-color: cyan;
+            color: #000;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        button:hover{
+
+            border-radius: 50px;
+            background-color: white;
+            color: black;
+        }
+        .text{
+            color: white;
+            margin-left: 100px;
+            margin-top: 20px;
+            transition: 2s;
+        }
+        .text:hover{
+            transform: translateX(175px);
+        }
+        #headline:hover{
+            color: cyan;
+            transform: translateX(175px);
+        }
+        #img{
+            height: 280px;
+            width: 280px;
+            margin-top: 20px;
+            margin-left:10px ;
+            border-radius: 50%;
+            transition: 2s;
+        }
+        #img:hover{
+            transform: translateY(-20px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">
+        <div class="sbox" id="sbox1">
+            <div class="head">
+                <h1 id="headline">Portfolio.</h1>
+                <div class="but" id="but1">HOME</div>
+                <div class="but" id="but2">CONTACT</div>
+                <div class="but" id="but3">ABOUT</div>
+            </div>
+            <div class="section">
+                <div class="box1">
+                    <h2 class="text">Hello, it's Me</h2>
+                    <h1 class="text" style="color: cyan;">John Kendric</h1>
+                    <h3 class="text">And i'm a Frontend Developer</h3>
+                    <h4 class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae aut harum itaque
+                        repudiandae ut suscipit unde cumque rerum modi temporibus beatae sunt accusantium molestiae
+                        laborum culpa perspiciatis, dolor consequatur?</h4>
+                    <button>Download CV</button>
+                </div>
+                <div class="box2">
+                    <div class="smbox2">
+                        <img src="https://freepngimg.com/save/22654-man/594x600" alt="" id="img">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
