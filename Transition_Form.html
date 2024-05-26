@@ -1,0 +1,156 @@
+/* Transition Form */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            border: transparent;
+        }
+        main{
+            height: 1000px;
+            width: 100%;
+            border: 1px solid transparent;
+            /* background-image: linear-gradient(45deg,black,rgb(51, 99, 99) ,black); */
+            /* background-color: #8EC5FC; */
+            background-image: linear-gradient(62deg, black 5%,skyblue 10% , violet 85% );
+
+        }
+        main header{
+            height: 150px;
+            width: 100%;
+            border: 1px solid transparent;
+            box-shadow: 0px 0px 10px black;
+            display: flex;
+            justify-content: center;
+        }
+        header:hover{
+            box-shadow: 0px 0px 10px black;
+            border-radius: 20px;
+        }
+        .box{
+            height: 65px;
+            width: 125px;
+            border: 1px solid transparent;
+            background-color: rgba(0,0,0, 0.3);
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0px 0px 5px white;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            line-height: 65px;
+            transition: 3s;
+        }
+        main section{
+            height: 450px;
+            width: 100%;
+            border: 1px solid transparent;
+            /* background-image: linear-gradient(45deg,black,darkslategray ,black); */
+        }
+        .box:hover{
+            height: 70px;
+            width: 150px;
+            box-shadow: 0px 0px 5px black;
+            border-radius: 40px 0px 40px 40px;
+            font-size: 30px;
+        }
+        .parent{
+            height: 400px;
+            width: 380px;
+            border: 1px solid transparent;
+            background-color: rgba(0,0,0, 0.1);
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 40px;
+            transition: 1s;
+
+        }
+        .parent:hover{
+            border-radius: 0px 80px 0px 80px;
+            box-shadow: 0px 0px 15px white;
+            height: 450px;
+            width: 430px;
+        }
+
+        
+        .inp{
+            height: 60px;
+            width: 290px;
+            border-radius: 30px;
+            margin: 10px auto;
+            text-align: center;
+            outline: none;
+            background-color: rgba(0,0,0, 0.1);
+            font-size: 20px;
+            transition: 0.8s;
+            box-shadow: 0px 0px 5px white;
+            
+        }
+        .inp1{
+            height: 50px;
+            width: 200px;
+            border-radius: 0px;
+            margin: 20px auto;
+            text-align: center;
+            outline: none;
+            background-color: white;
+            font-size: 20px;
+            color: black;
+            box-shadow: 0px 0px 5px white;
+            transition: 0.8s;
+        }
+        .img1{
+            height: 100px;
+            width: 120px;
+            margin: 0px auto;
+            transition: 0.2s;
+        }
+        .img1:hover{
+            transform: translateY(-100px);
+        }
+        .inp:hover{
+            border-radius: 0px;
+            box-shadow: 0px 0px 5px black;
+            width: 300px;
+        }
+        .inp1:hover{
+            height: 30px;
+            width: 100px;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="box"><a href="">HOME</a></div>
+            <div class="box"><a href="">ABOUT</a></div>
+            <div class="box"><a href="">CONTACT</a></div>
+        </header>
+        <section>
+            <div class="parent">
+                <img src="https://cdn-icons-png.flaticon.com/512/33/33308.png" alt="" class="img1">
+                <input type="text" name="" id=""  class="inp" placeholder="NAME">
+                <input type="email" name="" id="" class="inp" placeholder="M@IL">
+                <input type="submit" value="SUBMIT" class="inp1">
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
